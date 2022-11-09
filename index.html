@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>My Calculator</title>
+  </head>
+  <body>
+    <h1 class="title">My Google Calculator</h1>
+  
+
+    <div class="cal">
+      <div class="container">
+        <div class="display">
+          <input disabled class="result1" type="text" />
+          <input disabled class="result2" type="text" placeholder="0" />
+        </div>
+
+        <div class="btns">
+          <div class="row">
+            <button disabled type = "button" funct">Deg</button>
+            <button class="function" onclick="fact()">x!</button>
+            <button class="btn function">(</button>
+            <button class="btn function">)</button>
+            <button class="btn function">%</button>
+            <button class="function"  onclick="cur_result.value='', pre_result.value='' ">AC</button>
+          </div>
+
+          <div class="row">
+            <button class="function" onclick="sin()">sin</button>
+            <button class="function" onclick="In()">In</button>
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn function">÷</button>
+          </div>
+
+          <div class="row">
+            <button class="function" onclick="cos()">cos</button>
+            <button class="function" onclick="log()">log</button>
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn function">×</button>
+          </div>
+
+          <div class="row">
+            <button class="function" onclick="tan()">tan</button>
+            <button class="function" onclick="sqrt()">√</button>
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn function">-</button>
+          </div>
+
+          <div class="row">
+            <button class="function" onclick="exp()">EXP</button>
+            <button class="function" onclick="pow()">x<sup>y</sup></button>
+
+            <button class="btn number">0</button>
+            <button class="btn number">.</button>
+            <button
+              class="equal"
+              onclick="check()"
+            >
+              =
+            </button>
+            <button class="btn function">+</button>
+          </div>
+        </div>
+      </div>
+
+  
+
+      <script src="app.js"></script>
+    </div>
+
+    <div class="information">
+      In order to use sin, cos , tan , In, log and √, you need to enter a number first before use those functional key.
+    </div>
+  </body>
+</html>
